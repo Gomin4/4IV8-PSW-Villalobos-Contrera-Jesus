@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProblemasJs</title>
+    <script src="JS/problemas.js"></script>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+</head>
+<body>
+    <header>
+        <a name = Inicio /> 
+        <h1 align = center >Problemas JS</h1>
+    </header>
+
+    <!-- Contenido -->
+    <section>
+        <a name="P1"/>
+        <h2>Problema 1</h2>
+                <br>
+                <form method="post" name="problema1">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Introduce el capital que vas a invertir</td>
+                            <td class="td_inf"><input type="text" name="problema1_cantidad" onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema1_enviar" onclick="problema1_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Dinero ganado despues de un mes</td>
+                            <td><input type="text" name="problema1_resultado" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema1_borrar" onclick="problema1_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+        <hr>
+        <a name="P2"/>
+        <h2>Problema 2</h2>
+                <p>Sueldo base = $ 5000</p>
+                <form method="post" name="problema2">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Introduce el total de la venta 1</td>
+                            <td class="td_inf"><input type="text" name="problema2_cantidad1" onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Introduce el total de la venta 2</td>
+                            <td class="td_inf"><input type="text" name="problema2_cantidad2" onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Introduce el total de la venta 3</td>
+                            <td class="td_inf"><input type="text" name="problema2_cantidad3" onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema2_enviar" onclick="problema2_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Comision por las ventas</td>
+                            <td><input type="text" name="problema2_resultado1" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Sueldo total</td>
+                            <td><input type="text" name="problema2_resultado2" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema2_borrar" onclick="problema2_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+            
+        <hr>
+        <a name="P3"/>
+        <h2>Problema 3</h2>
+                <form method="post" name="problema3">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Introduce el total de la compra</td>
+                            <td class="td_inf"><input type="text" name="problema3_cantidad" onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema3_enviar" onclick="problema3_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">El total de la compra con el descuento incluido</td>
+                            <td><input type="text" name="problema3_resultado" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema3_borrar" onclick="problema3_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+        <hr>
+        <a name="P4"/>
+        <h2>Problema 4</h2>
+        <form method="post" name="problema4">
+            <table>
+                <tr>
+                    <td class="td_sup">Introduce la calificacion del primer parcial</td>
+                    <td class="td_inf"><input type="text" name="problema4_cantidad1" onkeypress="return validar(event)"></td>
+                </tr>
+                <tr>
+                    <td class="td_sup">Introduce la calificacion del segundo parcial</td>
+                    <td class="td_inf"><input type="text" name="problema4_cantidad2" onkeypress="return validar(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">Introduce la calificacion del tercer parcial</td>
+                    <td class="td_inf"><input type="text" name="problema4_cantidad3" onkeypress="return validar(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">Introduce la calificacion del examen final</td>
+                    <td class="td_inf"><input type="text" name="problema4_cantidad4" onkeypress="return validar(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">Introduce la calificacion del trabajo final</td>
+                    <td class="td_inf"><input type="text" name="problema4_cantidad5" onkeypress="return validar(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="td_inf"><input type="button" value="ENVIAR" name="problema4_enviar" onclick="problema4_funcion()"></td>
+                </tr>
+                <tr>
+                    <td class="td_sup">La calificacion final</td>
+                    <td><input type="text" name="problema4_resultado" readonly="readonly" class="input_text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="BORRAR" name="problema4_borrar" onclick="problema4_funcion_borrar()"></td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <a name="P5"/>
+        <h2>Problema 5</h2>
+                <form method="post" name="problema5">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Ingresa el numero de hombres</td>
+                            <td class="td_inf"><input type="text" name="problema5_cantidad1" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Ingresa el numero de mujeres</td>
+                            <td class="td_inf"><input type="text" name="problema5_cantidad2" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema5_enviar" onclick="problema5_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">El porcentaje de alumnos hombres</td>
+                            <td><input type="text" name="problema5_resultado1" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">El porcentaje de alumnos mujeres</td>
+                            <td><input type="text" name="problema5_resultado2" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema5_borrar" onclick="problema5_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+        <hr>
+        <a name="P6"/>
+        <h2>Problema 6</h2>
+                <form method="post" name="problema6">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Introduce el año de nacimiento</td>
+                            <td class="td_inf"><input type="text" name="problema6_cantidad1" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Introduce el mes de nacimiento</td>
+                            <td class="td_inf"><input type="text" name="problema6_cantidad2" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Introduce el dia de nacimiento</td>
+                            <td class="td_inf"><input type="text" name="problema6_cantidad3" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema6_enviar" onclick="problema6_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Edad</td>
+                            <td><input type="text" name="problema6_resultado" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema6_borrar" onclick="problema6_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+        <hr>
+        <a name="P7"/>
+        <h2>Problema 7</h2>
+       
+                <form method="post" name="problema7">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Ingresa el primer numero</td>
+                            <td class="td_inf"><input type="text" name="problema7_cantidad1" onkeypress="return validar3(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Ingresa el segundo numero</td>
+                            <td class="td_inf"><input type="text" name="problema7_cantidad2" onkeypress="return validar3(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema7_enviar" onclick="problema7_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">El resultado</td>
+                            <td><input type="text" name="problema7_resultado" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema7_borrar" onclick="problema7_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+        <hr>
+        <a name="P8"/>
+        <h2>Problema 8</h2>
+        <form method="post" name="problema8">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Ingresa el primer numero</td>
+                            <td class="td_inf"><input type="text" name="problema8_cantidad1" onkeypress="return validar3(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Ingresa el segundo numero</td>
+                            <td class="td_inf"><input type="text" name="problema8_cantidad2" onkeypress="return validar3(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Ingresa el tercer numero</td>
+                            <td class="td_inf"><input type="text" name="problema8_cantidad3" onkeypress="return validar3(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema8_enviar" onclick="problema8_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">El numero mayor</td>
+                            <td><input type="text" name="problema8_resultado" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema8_borrar" onclick="problema8_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+        <a name="P9"/>
+        <h2>Problema 9</h2>
+        <p>Hora normal = $300</p>
+                <form method="post" name="problema9">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Introduce las horas trabajadas</td>
+                            <td class="td_inf"><input type="text" name="problema9_cantidad" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema9_enviar" onclick="problema9_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Paga total</td>
+                            <td><input type="text" name="problema9_resultado" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema9_borrar" onclick="problema9_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+        <hr>
+        <a name="P10"/>
+        <h2>Problema 10</h2>
+        <p>Salario = $40000</p>
+                <form method="post" name="problema10">
+                    <table>
+                        <tr>
+                            <td class="td_sup">Introduce el año en que entraste a trabajar</td>
+                            <td class="td_inf"><input type="text" name="problema10_cantidad1" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Introduce el mes en que entraste a trabajar</td>
+                            <td class="td_inf"><input type="text" name="problema10_cantidad2" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Introduce el dia en que entraste a trabajar</td>
+                            <td class="td_inf"><input type="text" name="problema10_cantidad3" onkeypress="return validar2(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="td_inf"><input type="button" value="ENVIAR" name="problema10_enviar" onclick="problema10_funcion()"></td>
+                        </tr>
+                        <tr>
+                            <td class="td_sup">Utilidad</td>
+                            <td><input type="text" name="problema10_resultado" readonly="readonly" class="input_text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="BORRAR" name="problema10_borrar" onclick="problema10_funcion_borrar()"></td>
+                        </tr>
+                    </table>
+                </form>
+        
+    </section>
+
+    <!-- Contenido relacionado-->
+    <aside>
+                <ul>
+                    <hr>
+                    <h3>NAVEGADOR</h3>
+                    <hr>
+                    <li><a href="#P1">PROBLEMA 1</li></a>
+                    <hr>
+                    
+                    <li><a href="#P2">PROBLEMA 2</li></a>
+                    <hr>
+                    
+                    <li><a href="#P3">PROBLEMA 3</li></a>
+                    <hr>
+                    
+                    <li><a href="#P4">PROBLEMA 4</li></a>
+                    <hr>
+                    <li><a href="#P5">PROBLEMA 5</li></a>
+                    <hr>
+                    <li><a href="#P6">PROBLEMA 6</li></a>
+                    <hr>
+                    
+                    <li><a href="#P7">PROBLEMA 7</li></a>
+                    <hr>
+                    
+                    <li><a href="P8">PROBLEMA 8</li></a>
+                    <hr>
+                    
+                    <li><a href="#P9">PROBLEMA 9</li></a>
+                    <hr>
+                    <li><a href="#P10">PROBLEMA 10</li></a>
+                    <hr>
+                    
+                </ul>
+    </aside>
+
+
+
+    <!-- Pie de pagina -->
+    <footer>
+        
+            <h2>Villalobos Contreras Jesus 4IV8 </h2>
+               
+    </footer>
+
+    
+</body>
+</html>
